@@ -19,6 +19,6 @@ pipeline{
     }
   }
 }
-void print(){
+def print(){
   echo "Nani is scripting stuff"
 }
