@@ -1,7 +1,7 @@
 pipeline{
   agent any
   parameters{
-    booleanParam(name 'RC', defaultValue: false)
+    booleanParam(name : 'RC', defaultValue : false)
   }
   ext{
     nani_version = "1.2.1"
@@ -9,7 +9,7 @@ pipeline{
   stages{
       stage('BUILD'){
         steps{
-          echo "Build is successful $nani_version"
+          echo "Build is successful ${nani_version}"
           print()
         }
       }
