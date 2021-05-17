@@ -12,13 +12,13 @@ pipeline{
           echo "Build is successful ${nani_version}"
         }
       }
-    stage('print'){
+    stage('nani'){
       steps{
-         print()
+         nani()
       }
     }
   }
 }
-def print(){
+def nani(){
   echo "Nani is scripting stuff"
 }
