@@ -7,12 +7,15 @@ pipeline{
     nani_version = "1.2.1"
   }
   stages{
+      agent any
       stage('BUILD'){
         steps{
           echo "Build is successful ${nani_version}"
-          print()
         }
       }
+    stage('print'){
+      print()
+    }
   }
 }
 void print(){
