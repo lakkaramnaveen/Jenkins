@@ -3,7 +3,7 @@ pipeline{
   parameters{
     booleanParam(name : 'RC', defaultValue : false)
   }
-  ext{
+  environment{
     nani_version = "1.2.1"
   }
   stages{
