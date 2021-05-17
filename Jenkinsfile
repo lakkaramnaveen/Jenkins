@@ -17,8 +17,22 @@ pipeline{
          nani()
       }
     }
+    stage('bool'){
+      steps{
+        echo "boolean value is ${RC}"
+      }
+    }
+    stage('chinni'){
+      steps{
+        echo "${name()}"
+      }
+    }
   }
 }
 def nani(){
   echo "Nani is scripting stuff"
 }
+String name(){
+  return "Chinni Kumar"
+}
+
